@@ -21,7 +21,7 @@ class Dojo:
 
     @classmethod
     def get_all_dojos_db(cls):
-        query = "SELECT * FROM dojos"
+        query = "SELECT * FROM dojos;"
         dojo_result = connectToMySQL(DATABASE).query_db(query)
         all_dojos = []
         for ninjas in dojo_result:
